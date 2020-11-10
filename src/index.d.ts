@@ -1,3 +1,3 @@
-declare function hello(): void
-declare function world(): void
+declare function excopy(data: string, callback: () => void): void
+declare function geuuid(): void
 

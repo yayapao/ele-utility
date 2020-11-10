@@ -1,5 +1,5 @@
 // copy content to clipboard
-export default function exCopy(data: string, callback: () => void) {
+export function excopy(data: string, callback: () => void) {
   if (document.execCommand('copy')) {
     try {
       const input = document.createElement('input')

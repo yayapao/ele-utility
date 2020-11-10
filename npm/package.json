@@ -1,13 +1,13 @@
 {
-  "name": "npm-template-pure",
+  "name": "ele-utility",
   "version": "1.0.2",
-  "description": "make some descriptions here!",
+  "description": "Elegent & utility methods to facilitate common usage in JavaScript!",
   "main": "lib/index.js",
   "types": "index.d.ts",
   "keywords": [
-    "[\"npm\"",
-    "\"template\"",
-    "\"pure\"]"
+    "[\"javascript\"",
+    "\"methods\"",
+    "\"elegent\"]"
   ],
   "author": "Y-lonelY",
   "license": "MIT",

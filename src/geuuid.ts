@@ -1,4 +1,4 @@
-export default function geuuid() {
+export function geuuid() {
   try {
     let d = Number(new Date())
     if (window.performance && typeof window.performance.now === 'function') {
