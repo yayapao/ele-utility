@@ -1,0 +1,17 @@
+{
+  "name": "npm-template-pure",
+  "version": "1.0.2",
+  "description": "make some descriptions here!",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "[\"npm\"",
+    "\"template\"",
+    "\"pure\"]"
+  ],
+  "author": "Y-lonelY",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "~3.7.2"
+  }
+}
