@@ -8,10 +8,10 @@ export default {
     include: ['src/*.ts'],
     exclude: ['src/*.d.ts']
   },
-  output: {
+  output: [{
     dir: './npm/lib',
     format: 'cjs',
     exports: 'auto'
-  },
+  }],
   plugins: [multi(), typescript(), resolve(), commonjs()],
 }

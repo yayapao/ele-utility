@@ -17,7 +17,7 @@ function build() {
     echo ">>> No such dir"
   fi
   # handle typed file
-  cp src/index.d.ts npm/index.d.ts
+  cp src/index.d.ts npm/lib/index.d.ts
 }
 
 
