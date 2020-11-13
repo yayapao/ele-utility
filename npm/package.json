@@ -1,6 +1,6 @@
 {
   "name": "ele-utility",
-  "version": "1.0.13",
+  "version": "1.0.17",
   "description": "Elegent & utility methods to facilitate common usage in JavaScript!",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,8 +10,5 @@
     "\"elegent\"]"
   ],
   "author": "Y-lonelY",
-  "license": "MIT",
-  "dependencies": {
-    "typescript": "~3.7.2"
-  }
+  "license": "MIT"
 }

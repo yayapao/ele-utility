@@ -1,9 +1,3 @@
-function excopy(data: string, callback: () => void): void
-function geuuid(): void
-
-declare module eleUtility {
-  excopy, geuuid
-}
-
-export { excopy, geuuid }
-export default eleUtility
+export function excopy(data: string, callback: () => void): void
+export function geuuid(): void
+export function thsplite(value: string | number, seperator?: string): string 

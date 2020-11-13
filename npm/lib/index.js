@@ -44,5 +44,24 @@ function geuuid() {
     }
 }
 
+function thsplite(number, seperator) {
+    if (seperator === void 0) { seperator = ','; }
+    var value = number;
+    if (typeof value === 'number') {
+        value = String(value);
+    }
+    // [0] origin value [1] +/- [2] int [3] .decimal [4] decimal value
+    var cells = value.match(/^(-?)(\d*)(\.(\d+))?$/);
+    if (!cells || value === '-') {
+        return value;
+    }
+    var negative = cells[1];
+    var int = cells[2] || '0';
+    var decimal = cells[4] || '';
+    int = int.replace(/\B(?=(\d{3})+(?!\d))/g, seperator);
+    return "" + negative + int + "." + decimal;
+}
+
 exports.excopy = excopy;
 exports.geuuid = geuuid;
+exports.thsplite = thsplite;
