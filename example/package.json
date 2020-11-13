@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ele-utility": "^1.0.7"
+    "ele-utility": "^1.0.17"
   }
 }

@@ -2,14 +2,7 @@
 # yarn lockfile v1
 
 
-ele-utility@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/ele-utility/-/ele-utility-1.0.7.tgz#dfc2ad695062de33cd24b0d6fc93b05780506df2"
-  integrity sha512-e2YWAgu6btOXf0bWHJz0HnpQC1Pd4g2OgoTDVwXTmBkfLaaJOZkGGrnGF1zO9DAbsoCYYi6icCnsrkA9o2/q/A==
-  dependencies:
-    typescript "~3.7.2"
-
-typescript@~3.7.2:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
-  integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+ele-utility@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/ele-utility/-/ele-utility-1.0.17.tgz#8b878478f4a399e404ccd645423d9cb7caa4f1ce"
+  integrity sha512-5wHcdUHr5QdcW65nGMvsqpaZCpYf6fZYZGJbSudotuH3oCXoDRiRJeCBd5hkFUjp6IEEhRr3467eOQ14zCMdvw==
