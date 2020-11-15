@@ -44,6 +44,16 @@ function geuuid() {
     }
 }
 
+function loadscript(src) {
+    return new Promise(function (resolve, reject) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.onload = function () { return resolve(script); };
+        script.onerror = function () { return reject(new Error(src + " fail to load")); };
+        document.head.appendChild(script);
+    });
+}
+
 function thsplite(number, seperator) {
     if (seperator === void 0) { seperator = ','; }
     var value = number;
@@ -64,4 +74,5 @@ function thsplite(number, seperator) {
 
 exports.excopy = excopy;
 exports.geuuid = geuuid;
+exports.loadscript = loadscript;
 exports.thsplite = thsplite;
