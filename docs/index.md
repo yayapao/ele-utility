@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+## Quick Start
 
-You can use the [editor on GitHub](https://github.com/Y-lonelY/ele-utility/edit/pure/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Here's a quick demostration:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```javascript
+import { geuuid } from 'ele-utility'
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+// generate a uuid
+// -> "34523bf2-ce6a-42ec-803f-3e4b2a192a36" 
+const u = geuuid()
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Just import and use, so easy!
 
-### Jekyll Themes
+## API
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Y-lonelY/ele-utility/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Here, here, here 🎏
 
-### Support or Contact
+Ele-utility support these methods below and here is a quick index:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### geuuid
+
+To generate the uuid!
+
+```javascript
+import { geuuid } from 'ele-utility'
+
+// generate a uuid
+// -> "34523bf2-ce6a-42ec-803f-3e4b2a192a36" 
+const u = geuuid()
+```
+
+### excopy
+
+To copy something in Browser Clipboard!
+
+```javascript
+import { excopy } from 'ele-utility'
+
+// support callbacks after everything goes right
+excopy('hello', () => {
+  alert('copy success')
+})
+```
+
+### loadscript
+
+To load the JavaScript scripts asynchronously!
+
+```javascript
+import { loadscript } from 'ele-utility'
+
+(async () => {
+  await loadscript('hello.js')
+  // then do something
+})()
+```
+
+### thsplite
+
+To splite the number with thousands!
+
+```javascript
+import { thsplite } from 'ele-utility'
+
+// 123,456
+thsplite(123456)
+
+// also we support self defined the seperator
+// 123@456
+thsplite(123456, '@')
+```
