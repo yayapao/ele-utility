@@ -12,5 +12,8 @@ export function thsplite(number: string | number, seperator = ',') {
   let int = cells[2] || '0'
   const decimal = cells[4] || ''
   int = int.replace(/\B(?=(\d{3})+(?!\d))/g, seperator)
+  if (decimal === '') {
+    return `${negative}${int}` 
+  }
   return `${negative}${int}.${decimal}`
 }

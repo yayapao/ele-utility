@@ -69,6 +69,9 @@ function thsplite(number, seperator) {
     var int = cells[2] || '0';
     var decimal = cells[4] || '';
     int = int.replace(/\B(?=(\d{3})+(?!\d))/g, seperator);
+    if (decimal === '') {
+        return "" + negative + int;
+    }
     return "" + negative + int + "." + decimal;
 }
 
