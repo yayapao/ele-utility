@@ -1,4 +1,4 @@
-import { thsplite } from 'ele-utility'
+import { thsplite } from '../npm/lib/index'
 
 const a = thsplite('11111')
 

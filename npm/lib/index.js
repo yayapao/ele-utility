@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 // copy content to clipboard
 function excopy(data, callback) {
     if (document.execCommand('copy')) {
@@ -23,24 +19,6 @@ function excopy(data, callback) {
         catch (error) {
             throw new Error(error);
         }
-    }
-}
-
-function geuuid() {
-    try {
-        var d_1 = Number(new Date());
-        if (window.performance && typeof window.performance.now === 'function') {
-            d_1 += performance.now();
-        }
-        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-            var r = (d_1 + Math.random() * 16) % 16 | 0;
-            d_1 = Math.floor(d_1 / 16);
-            return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
-        });
-        return uuid;
-    }
-    catch (error) {
-        throw new Error(error);
     }
 }
 
@@ -75,7 +53,22 @@ function thsplite(number, seperator) {
     return "" + negative + int + "." + decimal;
 }
 
-exports.excopy = excopy;
-exports.geuuid = geuuid;
-exports.loadscript = loadscript;
-exports.thsplite = thsplite;
+function geuuid() {
+    try {
+        var d_1 = Number(new Date());
+        if (window.performance && typeof window.performance.now === 'function') {
+            d_1 += performance.now();
+        }
+        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = (d_1 + Math.random() * 16) % 16 | 0;
+            d_1 = Math.floor(d_1 / 16);
+            return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+        });
+        return uuid;
+    }
+    catch (error) {
+        throw new Error(error);
+    }
+}
+
+export { excopy, geuuid, loadscript, thsplite };

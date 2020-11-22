@@ -10,7 +10,7 @@ export default {
   },
   output: [{
     dir: './npm/lib',
-    format: 'cjs',
+    format: 'es',
     exports: 'auto'
   }],
   plugins: [multi(), typescript(), resolve(), commonjs()],
