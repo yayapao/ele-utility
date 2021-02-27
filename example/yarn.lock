@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-ele-utility@^1.0.17:
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/ele-utility/-/ele-utility-1.0.17.tgz#8b878478f4a399e404ccd645423d9cb7caa4f1ce"
-  integrity sha512-5wHcdUHr5QdcW65nGMvsqpaZCpYf6fZYZGJbSudotuH3oCXoDRiRJeCBd5hkFUjp6IEEhRr3467eOQ14zCMdvw==
+ele-utility@^1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/ele-utility/-/ele-utility-1.1.10.tgz#e6e2df9731cbdd50f6f426700c69421651d87cb6"
+  integrity sha512-w/V/mE14K+0aPN1ffj+W7xfIyz+nzZl7gmLz84AYIzkc6zBjhZui4xDV03NE3sVo4h3pXXT3bNf2n0IALTO1Iw==
