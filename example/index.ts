@@ -1,6 +1,6 @@
-import { thsplite } from '../npm/lib/index'
+import { thsplite, hdNumber } from '../npm/lib/index'
+const a = thsplite('111111')
+const b = hdNumber(25.1)
 
-const a = thsplite('11111')
-
-
-console.log(a)
+console.log('Run this script success!')
+console.log(b)
