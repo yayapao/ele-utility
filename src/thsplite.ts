@@ -1,3 +1,4 @@
+// 数组千分
 export function thsplite(number: string | number, seperator = ',') {
   let value = number
   if (typeof value === 'number') {
@@ -16,4 +17,12 @@ export function thsplite(number: string | number, seperator = ',') {
     return `${negative}${int}` 
   }
   return `${negative}${int}.${decimal}`
+}
+
+// 整数保留，小数保留对应位数，非数字返回相应字符串
+export function hdNumber(value: any, digits: number = 2) {
+  // 整数直接返回
+  if (Number.isInteger(value)) return value
+  if (!value) return '-'
+  return Number(value).toFixed(digits)
 }
