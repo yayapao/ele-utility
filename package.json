@@ -1,6 +1,6 @@
 {
   "name": "ele-utility",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Elegent & utility methods to facilitate common usage in JavaScript!",
   "main": "npm/lib/index.js",
   "types": "npm/lib/index.d.ts",
