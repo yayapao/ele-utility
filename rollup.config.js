@@ -2,6 +2,7 @@ import typescript from '@rollup/plugin-typescript'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import multi from '@rollup/plugin-multi-entry'
+import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: {
@@ -10,8 +11,8 @@ export default {
   },
   output: [{
     dir: './npm/lib',
-    format: 'es',
+    format: 'cjs',
     exports: 'auto'
   }],
-  plugins: [multi(), typescript(), resolve(), commonjs()],
+  plugins: [multi(), typescript(), resolve(), terser(), commonjs()],
 }
