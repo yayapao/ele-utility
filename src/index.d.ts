@@ -4,4 +4,4 @@ export function thsplite(value: string | number, seperator?: string): string
 export function hdNumber(value: any, digits?: number): string | number
 export function loadscript(src: string): Promise<any>
 // hdcharts
-export function geAxis(unit: string, digits: number): string | number
+export function geAxis(unit: string, digits: number): any
