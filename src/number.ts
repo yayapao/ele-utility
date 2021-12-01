@@ -1,4 +1,4 @@
-// 数组千分
+// 数字千分
 export function thsplite(number: string | number, seperator = ',') {
   let value = number
   if (typeof value === 'number') {
@@ -14,7 +14,7 @@ export function thsplite(number: string | number, seperator = ',') {
   const decimal = cells[4] || ''
   int = int.replace(/\B(?=(\d{3})+(?!\d))/g, seperator)
   if (decimal === '') {
-    return `${negative}${int}` 
+    return `${negative}${int}`
   }
   return `${negative}${int}.${decimal}`
 }

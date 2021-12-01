@@ -6,13 +6,15 @@ import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: {
-    include: ['src/*.ts'],
-    exclude: ['src/*.d.ts']
+    include: ['src/index.ts'],
+    exclude: ['src/*.d.ts'],
   },
-  output: [{
-    dir: './npm/lib',
-    format: 'cjs',
-    exports: 'auto'
-  }],
+  output: [
+    {
+      dir: './npm/lib',
+      format: 'cjs',
+      exports: 'auto',
+    },
+  ],
   plugins: [multi(), typescript(), resolve(), terser(), commonjs()],
 }
