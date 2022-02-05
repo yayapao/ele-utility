@@ -26,7 +26,7 @@ export function excopy(data: string, callback: () => void) {
 }
 
 // 生成 uuid
-export function geuuid() {
+export function geuuid(): string {
   try {
     let d = Number(new Date())
     if (window.performance && typeof window.performance.now === 'function') {

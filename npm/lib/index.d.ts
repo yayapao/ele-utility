@@ -3,7 +3,7 @@ export function shuffle<X extends Array<any>>(array: X): X
 
 // browser
 export function excopy(data: string, callback: () => void): void
-export function geuuid(): void
+export function geuuid(): string
 export function loadscript(src: string): Promise<any>
 
 // hdCharts
